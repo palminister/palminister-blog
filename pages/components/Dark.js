@@ -1,4 +1,4 @@
-import nightwind from "nightwind/helper";
+import nightwind from 'nightwind/helper'
 const Dark = () => (
   <button
     onClick={() => nightwind.toggle()}
@@ -6,20 +6,20 @@ const Dark = () => (
     aria-label="Enable Dark Mode"
   >
     <svg
-      class="w-12 h-12"
+      className="w-12 h-12"
       fill="currentColor"
       stroke="currentColor"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
         className="text-black transition duration-500 dark:text-yellow-300 hover:text-gray-700"
       ></path>
     </svg>
   </button>
-);
-export default Dark;
+)
+export default Dark

@@ -20,7 +20,7 @@ export async function getStaticPaths() {
     paths: data.items.map((item) => ({
       params: { slug: item.fields.slug },
     })),
-    fallback: true,
+    fallback: false,
   }
 }
 
@@ -37,10 +37,10 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Article({ article }) {
-  console.log(article)
+  // console.log(article)
   let categories = article.fields.category
   return (
-    <React.Fragment className="font-sans text-black">
+    <React.Fragment>
       <Head>
         <title>Palminister Blog • {article.fields.title}</title>
         <link
