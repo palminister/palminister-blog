@@ -51,10 +51,10 @@ const Intro = () => (
       PALMINISTER <span className="text-black line-through">BLOCKS</span>{' '}
       <span className="text-purple-500">BLOG</span>
     </h1>
-    <p className="pt-5 font-normal text-black">
+    <p className="px-5 pt-5 font-normal text-black">
       A journal of a duck that is learning how to fly... <br /> a spaceship.
     </p>
-    <p className="pt-5 text-black">
+    <p className="px-5 pt-5 text-black">
       [data science <span className="px-2">x</span> film
       <span className="px-2"> x </span> art]
     </p>
