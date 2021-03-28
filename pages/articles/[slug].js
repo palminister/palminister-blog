@@ -20,7 +20,7 @@ export async function getStaticPaths() {
     paths: data.items.map((item) => ({
       params: { slug: item.fields.slug },
     })),
-    fallback: false,
+    fallback: true,
   }
 }
 
@@ -33,11 +33,14 @@ export async function getStaticProps({ params }) {
     props: {
       article: data.items[0],
     },
+    revalidate: 1,
   }
 }
 
 export default function Article({ article }) {
   // console.log(article)
+  if (!article)
+    return <h1 className="font-sourcecode">404 This Page is Dead</h1>
   let categories = article.fields.category
   return (
     <React.Fragment>
@@ -71,7 +74,7 @@ export default function Article({ article }) {
             height={article.fields.banner.fields.file.details.image.height}
             alt={article.fields.banner.fields.title}
           />
-          <div className="px-4 pt-4 pb-8 text-black sm:px-6 lg:px-8">
+          <div className="px-6 pt-4 pb-8 text-black lg:px-8">
             <h1>{article.fields.title}</h1>
             {/* <p className="text-gray-600">{article.fields.subtitle}</p> */}
             <div className="flex font-light text-gray-500 text-md">
