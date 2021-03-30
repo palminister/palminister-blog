@@ -19,7 +19,7 @@ export async function getStaticProps() {
     props: {
       articles: article.items,
     },
-    revalidate: 1,
+    revalidate: 15,
   }
 }
 
@@ -29,7 +29,7 @@ export default function Home({ articles }) {
     localStorage.getItem('nightwind-mode') === 'dark'
       ? document.documentElement.classList.add('dark')
       : null
-  })
+  }, [])
   return (
     <React.Fragment>
       <Head>

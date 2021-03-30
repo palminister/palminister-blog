@@ -2,7 +2,7 @@ const Footer = () => (
   <div className="p-5 font-sourcecode">
     <div className="flex justify-center space-x-6">
       <a
-        href="https://github.com/thanapatjum"
+        href="https://github.com/palminister"
         className="text-gray-400 hover:text-gray-500"
         target="_blank"
         rel="noreferrer"
