@@ -50,14 +50,14 @@ export default function Home({ articles }) {
           <Dark />
           <Intro />
           <div className="flex justify-end max-w-lg px-2 pr-8 mx-auto my-0 lg:pr-10 lg:max-w-none lg:px-4 font-sourcecode">
-            <div class="relative max-w-xs">
-              <div class="absolute inset-y-0 h-10 left-0 flex items-center pl-3 pointer-events-none">
+            <div className="relative max-w-xs">
+              <div className="absolute inset-y-0 left-0 flex items-center h-10 pl-3 pointer-events-none">
                 <svg
-                  class="w-4 text-gray-400 h-4"
+                  className="w-4 h-4 text-gray-400"
                   fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -65,7 +65,7 @@ export default function Home({ articles }) {
                 </svg>
               </div>
               <input
-                class="w-32 mb-2 h-10 pl-9 text-gray-500 border-gray-200 rounded-full bg-white focus:outline-none transition duration-300 focus:border-green-300 placeholder-gray-500"
+                className="w-32 h-10 mb-2 text-gray-500 placeholder-gray-500 transition duration-300 bg-white border-gray-200 rounded-full pl-9 focus:outline-none focus:border-green-300"
                 type="text"
                 placeholder="Search"
                 onChange={(e) => setSearch(e.target.value)}
