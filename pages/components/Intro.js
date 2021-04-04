@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 const Intro = () => (
-  <div className="max-w-xl px-5 pt-12 mx-auto text-center font-sourcecode py-14">
+  <div className="max-w-xl px-5 pb-4 mx-auto text-center pt-14 font-sourcecode">
     <div className="relative">
       <div className="absolute top-0 left-0 m-0 ease-in-out animate-subfloat2">
         <Image

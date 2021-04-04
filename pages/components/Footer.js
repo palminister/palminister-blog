@@ -23,7 +23,7 @@ const Footer = () => (
       </a>
     </div>
     <p className="flex justify-center pt-2 text-sm text-gray-500">
-      © 2021 Thanapat Jumnongrat
+      © 2021 Palm Jumnongrat
       <span className="hidden sm:flex">. All rights reserved.</span>
     </p>
   </div>
