@@ -5,6 +5,7 @@ import Intro from './components/Intro'
 import Dark from './components/Dark'
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 let client = require('contentful').createClient({
   space: process.env.NEXT_CONTENTFUL_SPACE_ID,
@@ -25,12 +26,20 @@ export async function getStaticProps() {
 
 export default function Home({ articles }) {
   // console.log(articles)
+  const { query } = useRouter()
+  // console.log(query.search)
   const [search, setSearch] = useState('')
+
+  useEffect(() => {
+    query.search ? setSearch(query.search) : null
+  }, [query])
+
   useEffect(() => {
     localStorage.getItem('nightwind-mode') === 'dark'
       ? document.documentElement.classList.add('dark')
       : null
   }, [])
+
   return (
     <React.Fragment>
       <Head>
