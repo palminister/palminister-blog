@@ -21,6 +21,26 @@ const Footer = () => (
           ></path>
         </svg>
       </a>
+      <a
+        href="https://www.linkedin.com/in/thanapat-jumnongrat/"
+        className="m-auto text-gray-400 hover:text-gray-500"
+        target="_blank"
+        rel="noreferrer"
+        title="LinkedIn"
+      >
+        <svg
+          className="w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            fillRule="evenodd"
+            d="m5.2 21.6v-14.5h-4.8v14.5zm-2.4-16.5c1.7 0 2.7-1.1 2.7-2.5s-1-2.5-2.7-2.5c-1.6 0-2.7 1.1-2.7 2.5s1 2.5 2.7 2.5zm5.1 16.5h4.8v-8.1c0-.4 0-.9.2-1.2.3-.9 1.1-1.8 2.5-1.8 1.7 0 2.4 1.3 2.4 3.3v7.8h4.8v-8.3c0-4.5-2.4-6.5-5.5-6.5-2.6 0-3.7 1.5-4.4 2.4v-2.1h-4.8z"
+            clipRule="evenodd"
+          ></path>
+        </svg>
+      </a>
     </div>
     <p className="flex justify-center pt-2 text-sm text-gray-500">
       © 2021 Palm Jumnongrat
