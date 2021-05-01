@@ -56,6 +56,17 @@ export default function Home({ articles }) {
       </Head>
       <div>
         <header>
+          <div className="absolute z-50 top-8 right-20 sm:top-12 sm:pt-1 sm:right-32 md:right-36 ">
+            <a
+              href="https://palminister-portfolio.vercel.app/"
+              className="font-light text-black transition ease-in hover:text-purple-500 font-sourcecode"
+              target="_blank"
+              rel="noreferrer"
+              title="Portfolio"
+            >
+              [Portfolio]
+            </a>
+          </div>
           <Dark />
           <Intro />
           <div className="flex justify-end max-w-lg px-2 pr-8 mx-auto my-0 lg:pr-10 lg:max-w-none lg:px-4 font-sourcecode">
