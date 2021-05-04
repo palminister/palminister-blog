@@ -4,7 +4,7 @@ import { BLOCKS } from '@contentful/rich-text-types'
 const dayjs = require('dayjs')
 
 const ArticleContent = ({ categories, article }) => {
-  return (
+  return article != undefined ? (
     <div className="overflow-hidden rounded-lg shadow-2xl bg-gray-50">
       <Image
         src={'https:' + article.fields.banner.fields.file.url}
@@ -49,6 +49,6 @@ const ArticleContent = ({ categories, article }) => {
         </div>
       </div>
     </div>
-  )
+  ) : null
 }
 export default ArticleContent
