@@ -45,6 +45,21 @@ export const Home = ({ articles }) => {
     <>
       <Head>
         <title>Palminister Blog</title>
+        <meta
+          property="og:url"
+          content="https://palminister-blog.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Palminister Blog" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="og:description"
+          content="A personal blog dedicated to interdisciplinary practice"
+        />
+        <meta
+          property="og:image"
+          content="https://palminister-portfolio.vercel.app/_next/image?url=%2Fmysite-thumbnail%2Fpalminister-blog-thumb.png&w=3840&q=75"
+        />
         <link
           rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦜</text></svg>"

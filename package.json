@@ -15,7 +15,7 @@
     "contentful": "^8.1.7",
     "dayjs": "^1.10.4",
     "js-cookie": "^2.2.1",
-    "next": "10.0.6",
+    "next": "^10.2.0",
     "next-themes": "^0.0.12",
     "nightwind": "^1.1.6",
     "postcss": "^8.2.4",
